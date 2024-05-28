@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Score"
+    android:background="@drawable/quiz_background2"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="292dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/emsi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/Progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:scaleX="-1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score :"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/syncopate_bold"
+        android:layout_marginTop="25dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="#9C27B0"
+        android:fontFamily="@font/syncopate_bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        >
+
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_custom"
+            android:fontFamily="@font/syncopate_bold"
+            android:textColor="#9C27B0"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:minWidth="150dp"
+            android:minHeight="48dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_custom"
+            android:fontFamily="@font/syncopate_bold"
+            android:textColor="#9C27B0"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:minWidth="150dp"
+            android:minHeight="48dp"
+            tools:ignore="HardcodedText"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_custom"
+        android:fontFamily="@font/syncopate_bold"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:minWidth="150dp"
+        android:minHeight="48dp"
+        android:text="LeaderBoard"
+        android:textColor="#9C27B0"
+
+        app:backgroundTint="@null"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

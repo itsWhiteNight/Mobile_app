@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingClass"
+    android:orientation="vertical"
+    android:background="@drawable/quiz_background"
+    tools:context=".Quiz1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="317dp"
+            android:layout_height="77dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/emsi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/syncopate_bold"
+            android:text="What does VPN stand for?"
+            android:textColor="#9C27B0"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/syncopate"
+                android:text="Viral Public Network"
+                android:textColor="#9C27B0"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/syncopate"
+                android:text="Virtual Private Network"
+                android:textColor="#9C27B0"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/syncopate"
+                android:text="Virtual Public Netwrok"
+                android:textColor="#9C27B0"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"></RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/syncopate"
+            android:paddingTop="16dp"
+            android:text="Countdown: "
+            android:layout_marginTop="30dp"
+            android:textColor="#9C27B0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/NextBtn"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_custom"
+            android:fontFamily="@font/syncopate_bold"
+            android:minWidth="355dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="Next"
+            android:textColor="#9C27B0"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            tools:ignore="HardcodedText"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
